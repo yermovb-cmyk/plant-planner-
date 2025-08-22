@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Catalog</title>
+  <style>
+    body {
+      background: #e9f5ec url('plant-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #2e4d2c;
+      margin: 0;
+      padding: 0;
+    }
+    .catalog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .plant-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 16px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .plant-card:hover { transform: scale(1.03); }
+    .plant-photo {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    h3 { margin: 12px 0 8px; font-size: 18px; color: #1f3d20; }
+    p { font-size: 14px; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <div class="catalog-container" id="catalog">
+
+    <!-- Plant A -->
+    <div class="plant-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Aloe_vera_flower.jpg" alt="Aloe Vera" class="plant-photo"/>
+      <h3>Aloe Vera</h3>
+      <p>Bright, indirect light. Water sparingly and allow soil to dry completely.</p>
+    </div>
+
+    <!-- Plant B -->
+    <div class="plant-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Dypsis_lutescens2.jpg" alt="Areca Palm" class="plant-photo"/>
+      <h3>Areca Palm</h3>
+      <p>Lightly moist soil. Prefers indirect light and high humidity. Mist regularly.</p>
+    </div>
+
+    <!-- Plant C -->
+    <div class="plant-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Asparagus_setaceus.jpg" alt="Asparagus Fern" class="plant-photo"/>
+      <h3>Asparagus Fern</h3>
+      <p>Bright indirect light. Keep soil evenly moist. Avoid direct sun.</p>
+    </div>
+
+    <!-- Plant D -->
+    <div class="plant-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Peperomia_obtusifolia_002.JPG" alt="Baby Rubber Plant" class="plant-photo"/>
+      <h3>Baby Rubber Plant</h3>
+      <p>Medium to bright indirect light. Water when top inch of soil is dry.</p>
+    </div>
+
+    <!-- Plant E -->
+    <div class="plant-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Musa_acuminata_BotGardBln1105.jpg" alt="Banana Plant" class="plant-photo"/>
+      <h3>Banana Plant</h3>
+      <p>Bright light and consistent moisture. Fertilize regularly during growing season.</p>
+    </div>
+
+    <!-- Plant F -->
+    <div class="plant-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Strelitzia_reginae_Stuttgart_2006_08_02.jpg" alt="Bird of Paradise" class="plant-photo"/>
+      <h3>Bird of Paradise</h3>
+      <p>Thrives in bright light. Water weekly, keeping soil moist but not soggy.</p>
+    </div>
+
+    <!-- Plant G -->
+    <div class="plant-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Nephrolepis_exaltata_Boston.jpg" alt="Boston Fern" class="plant-photo"/>
+      <h3>Boston Fern</h3>
+      <p>High humidity and indirect light. Soil should be consistently moist. Mist regularly.</p>
+    </div>
+
+    <!-- Plant H -->
+    <div class="plant-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Bromeliad_in_Brazil.jpg" alt="Bromeliad" class="plant-photo"/>
+      <h3>Bromeliad</h3>
+      <p>Bright, indirect light. Keep central cup filled with water. Soil lightly moist.</p>
+    </div>
+
+  </div>
+</body>
+</html>
